@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-M.png" type="image/png">
+        <img src="img/foto-G.png" alt="foto grande">
+    </picture>
+    <!--A ordem do código é indispensável para a responsividade dar certo.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+   <audio preload="metadata" autoplay controls loop>
+    <source src="midia/md01.mp3" type="audio/mpeg"> 
+    <source src="midia/md01.ogg" type="audio/ogg">
+    <source src="midia/md01.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/md01.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    <!--Isso tem uma estrutura semelhante à IF...ELSE da lógica de programação: primeiro, será feita a tentativa de rodar o mp3, em seguida, outras tentativas. Evite utilizar o formato wav, pois é pesadíssimo. Qualidade top é para download.-->
+   </audio>
+</body>
+</html>

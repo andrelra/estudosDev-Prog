@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Fómulário</h1>
+    <form action="cadastro.html" method="POST" autocomplete="on"> <!--Aqui, o autocomplete só aceita "on" ou "off"-->
+        <p>
+            <label for="iuser">Usurário: </label>
+            <input type="text" name="user" id="iuser" minlength="5" maxlength="15" placeholder="Mínimo 5 letras" autocomplete="username"> <!--Aqui, o autocomplete sugere o usuário já digitado em algum momento.-->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Mínimo 8 dígitos" autocomplete="current-password"> <!--Aqui, o autocomplete sugerirá senha do gerenciador de senhas do seu navegador. Uma outra opção é o "new-password"-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>

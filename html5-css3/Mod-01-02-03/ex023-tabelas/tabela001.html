@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*Pode-se alinhar "right" ou "left". Alinhamento horizontal.*/
+            vertical-align: middle; /*pode-se alinhar "bottom", "top" e "middle" (o padrão). Alinhamento vertical */
+        }
+
+        .collum {
+            background-color: aqua;
+        }
+
+        .row {
+            background-color: gray;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Primeira Tabela do Curso</h1>
+
+    <!-- 
+
+        HIERAQUIA DE ELEMENTOS DA TABELA (tipo simples)
+
+        TABLE = tabela;
+            TABLE ROW = linha de tabela;
+                TABLE HEADER = cabeçalho de tabela;
+                TABLE DATA = dado de tabela.
+
+    -->
+
+    <table>
+        <tr>
+            <td>Linhas/Colunas</td>
+            <td class="collum">Coluna 1</td>
+            <td class="collum">Coluna 2</td>
+            <td class="collum">Coluna 3</td>
+        </tr>
+        <tr>
+            <td class="row">Linha 1</td>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td class="row">Linha 2</td>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td class="row">Linha 3</td>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

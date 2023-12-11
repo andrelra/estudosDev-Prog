@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste mesclagem de tabela - desafio</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        head, th {
+            color: gray;
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+           <tr>
+            <th rowspan="2">Aréa</th>
+            <th rowspan="2">Disciplina</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+           </tr>
+           <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

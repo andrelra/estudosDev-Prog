@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+
+            Medidas Absolutas:
+            cm, mm, in (polegadas - 2.54cm), px, pt, pc
+
+            Medidas Relativas:
+            em, ex,rem, vw, vh, %
+
+            Obs1.: Normalmente os navegadores usam o font-size automático (natural) de 16px.
+
+            Obs2.: A W3C recomenta suar somente as medidas "px" e "em"
+
+            Obs3.: Geralmente 16px = 1 em. Assim, 2em é o dobro (32) de 16px.
+            Também, 0.5em é metade do tamanho natural da fonte (16px -> 8px)
+
+            */
+            font-size: 1em;
+            font-weight:bold; 
+            
+            /*peso da fonte (font-weight): lighter, normal, bold, bolder. Algumas fontes não usam todos esses valores. Também pode-se usar valores numéricos, que vão de 100 a 900.
+            
+            */
+            font-style:italic; /*Estilo de fonte: se itálico, negrito.*/
+            text-decoration: underline; /*sublinhar*/
+
+            /* tudo em um: shorthand 
+                Há uma ordem:
+                font-style + font-weight + font-size + font-family
+            */
+            /* veja: 
+            
+            font: italic bolder 1em sans-serif;
+            
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ducimus repudiandae aut reiciendis quisquam deleniti eos nulla suscipit iste deserunt inventore mollitia non dolore aperiam animi nobis repellat architecto recusandae explicabo enim voluptatibus, nostrum tempore? Sit reiciendis, explicabo vel animi error officiis! Nam, accusamus porro velit quas veritatis nesciunt qui, libero nisi sed laudantium laboriosam assumenda incidunt quasi tempore exercitationem ipsa mollitia aliquid nulla sint quae quisquam adipisci reprehenderit. Totam magnam sint dolor dolorem beatae aliquam quas repudiandae, minima rem, nihil obcaecati, reiciendis corrupti inventore veniam cum possimus sequi atque maxime eaque ea. Totam aliquid amet id quos nulla unde!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio est quod quo soluta odit officia nemo? Dolorum asperiores corrupti qui aliquam rem sit non magnam consequatur sed nulla. Amet iste, tempore, dicta illum possimus earum voluptates harum doloremque aspernatur accusantium accusamus natus, esse veniam delectus voluptatibus sed totam incidunt minima nobis necessitatibus libero? Nisi iste sunt magni reiciendis perspiciatis rem! Quibusdam, at incidunt natus adipisci veniam veritatis corrupti ex a iure assumenda ipsam distinctio porro ut voluptatum inventore debitis fuga totam, hic asperiores. Tenetur pariatur aliquam id aspernatur impedit neque adipisci aut doloribus commodi perspiciatis, tempora natus similique corporis. 
+    </p>
+</body>
+</html>

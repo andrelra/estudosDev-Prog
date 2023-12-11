@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Hove</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(194, 163, 126);
+            font-size: 14px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: rgb(7, 226, 226);
+            text-shadow: 5px 6px 4px rgb(2, 71, 71);
+        }
+       
+
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            padding: 5px;       
+        }
+
+        div > p {
+            display: none;         
+        }
+
+        div > code {
+            display: none;
+        }
+
+        div:hover > p {
+            display: inline-block;
+    
+        }
+        
+        div:hover > code {
+            display: block;
+        }
+
+        div:hover {
+            background-color: aqua;
+            display:inline-table; /*inline-table resolveu o problema das caixas não selecionadas com o mouse abaixarem-se automaticamente ao passar o mouse sobre qualquer uma delas*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>PSEUDO CLASSE "HOVE"</h1>
+    <div>
+        <h2>Passe o Mouse</h2>
+        <p>Código CSS que esconde o conteúdo de &lt;p&gt;:</p>
+        <code>
+            div > p { <br>
+                display: none; <br>
+            }    
+        </code>
+    </div>
+    <div>
+        <h2>Passe o Mouse</h2>
+        <p>Código CSS que mostra o conteúdo de &lt;p&gt;:</p>
+        <code>
+            div:hover > p {<br>
+            display: block;<br>
+            }
+        </code>
+    </div>
+    <div>
+        <h2>Passe o Mouse</h2>
+        <p>Código CSS que altera a cor de fundo da &lt;div&gt;:</p>
+        <code>
+            div:hover {<br>
+                background-color: aqua;<br>
+            }
+        </code>
+    </div>
+    
+</body>
+</html>

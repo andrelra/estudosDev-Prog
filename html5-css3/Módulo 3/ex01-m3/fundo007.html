@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de caixa</title>
+    <style>
+        #container {
+            background-image: url('imagens-cap19/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url('imagens-cap19/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+            /* No transform e translate podemos tralhar com pixels (x - horizontal; y - vertical - de modo que, numeros negativos: esquerda e para cima; números positivos: direita e para baixo)
+                e com pocentagem.
+               Para funcionar, é preciso colocar o "position:relative", no container, e o "position: absolute;" no conteúdo, e neste, colocar o left e o top em 50% ambos.
+            */
+            /* transform: translate( 30px, 90px); */
+                transform: translate(-50%, -50%);
+            }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

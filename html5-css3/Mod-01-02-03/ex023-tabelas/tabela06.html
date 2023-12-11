@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização de Colunas</title>
+    <style>
+        table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        head, th {
+            border: 1px solid black;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        /*
+        col.cnome{
+
+            background-color: gray;
+        }
+
+        col.csexo {
+            background-color: rgb(212, 206, 206);
+
+        }
+
+        col.c-idade {
+            background-color: rgb(228, 223, 223);
+
+        }
+
+        col.cprofissao {
+            background-color: yellow;
+        }
+        */
+
+        .cinza {
+            background-color: gray;
+        }
+
+        .amarelo {
+            background-color: yellow;
+            background-size: ;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Estilização de Colunas com HTML5</h1>
+
+    <!--Três formas de fazer: 
+    
+        1 - Criar uma classe para cada coluna, dentro da tag "<col>", na div "<colgroup>";
+        2 - Usar a tag "span" + quantidade de colunas a estilizar;
+        3 - Criar classes com nome de cores e estizar no css. Pode-se também juntar 2 e 3.
+    -->
+    
+    <table>
+       <!-- <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="c-idade" span="2">
+        </colgroup> 
+        -->
+        <colgroup>
+            <col class="cinza">
+            <col class="amarelo">
+            <col class="cinza">
+            <col class="amarelo">
+        </colgroup>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

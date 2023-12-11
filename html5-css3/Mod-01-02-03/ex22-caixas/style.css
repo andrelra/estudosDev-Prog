@@ -1,0 +1,158 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, #df7c7c 2%, #b35353, #801515);
+    background-attachment: fixed;
+    height: 190px;
+    padding: 10px;
+    color: #FFAAAA;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+
+.container-header {
+    display: flex;
+    position: absolute;
+
+}
+
+.quadro-um {
+    background-color: #FFAAAA;
+    width: 150px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.quadro-dois {
+    background-color: #D46A6A;
+    width:150px;
+    height: 30px;
+    margin-right: 5px;
+}
+.quadro-tres {
+    background-color: #AA3939;
+    width: 150px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.quadro-quatro {
+    background-color: #801515;
+    width: 150px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.retangulo {
+    background-color: #e46e6e;
+    opacity: 0.5;
+    width: 100.6vh;
+    height: 30px;
+}
+
+.image {
+    background-image: url("img/mulher03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 15%;
+    height: 105%;
+    margin-top: 0;
+
+}
+
+.p-header {
+    font-size: 0.5em;
+    text-align: center;
+    float: right;
+    width: 300px;
+    margin-top: 60px;
+}
+h1 {
+    text-shadow: 2px 2px 5px #550000;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+}
+
+.container-menus {
+    margin: 0;
+    text-align: center;
+}
+
+span {
+    
+    display: inline-flex;
+}
+span > a {
+    font-family: 'Satisfy', cursive;
+    text-decoration: none;
+    color: #003333;
+    background-color: #669999;
+    color: #003333;
+    width: 248px;
+    height: 4vh;
+    margin-right: 5px;
+    padding-top: 3px;
+}
+span > a::before {
+    content: '❁';
+}
+
+span > a:hover {
+    background-color: #003333;
+    color: #669999;
+}
+
+.content {
+    color: rgb(82, 79, 79);
+}
+
+.linhavertical {
+    display: inline-block;
+    height: 200px;
+    border-left: 1px solid black;
+}
+
+article {
+    display: inline-block;
+    font-family: 'Satisfy', cursive;
+    width: 550px;
+    height: 230px;
+    padding: 15px;
+    color: #003333;
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 30px;
+}
+aside {
+    font-size: 15px;
+    font-style: italic;
+}
+article > a {
+    text-decoration: none;
+    color: rgb(204, 24, 24);
+}
+footer {
+    font-size: 12px;
+    background-color: #6d8048;
+    text-align: center;
+    color: #d2ee95;
+    padding: 5px;  
+}
+
+footer > p {
+    margin: 0;
+}

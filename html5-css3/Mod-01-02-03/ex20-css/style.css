@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+    Em HTML é id e em CSS é # (só pode 1 elemento por página html)
+    Em HTML é class e em CSS é ".". (pode-se usá-las em vários elementos)
+*/
+
+body {
+    background-color: rgb(221, 236, 221);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #315f3d;
+}
+/*
+        HIERARQUIA
+
+    As configurações de "id" se sobrepõem às configurações normais dos elementos html.
+*/
+h1#principal { /* id */
+    text-align: center;
+    background-color: rgb(11, 92, 18);
+    color: #d3eeda;
+ }
+ 
+h2 {
+    color: #71b199;
+}
+.basico {
+    color: #164773;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #1E5959;
+}
+
+.avancado {
+    color: rgb(117, 91, 20);
+    font-weight: bold;
+}
+.destaque {
+    background-color: black;
+    color: white;
+}
