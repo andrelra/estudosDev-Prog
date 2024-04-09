@@ -14,8 +14,20 @@ print('O sexo escolhido: {}'.format(s))'''
 
 # Outra Forma:
 
-sexo = str(input('Digite o sexo [M/F]: ')).strip().upper()[0]
+''''sexo = str(input('Digite o sexo [M/F]: ')).strip().upper()[0]
 while sexo not in 'MmFf':
     sexo = str(input('Entrada inválida. Digite novamente [M/f]: ')).strip().upper()[0]
-print('Sexo {} digitado com sucesso!'.format(sexo))
+print('Sexo {} digitado com sucesso!'.format(sexo))'''
+
+# Outra forma feita em 9 de abril de 2024 (mais tardiamente as anteriores):
+
+sexo = str(input("Digite M para masculino ou F para feminino: ")).strip().upper()
+while sexo not in "FfMm":
+    sexo = str(input('Digite a letra do sexo corretamente: ')).strip().upper()
+if sexo == 'M':
+    masc = 'masculino'
+    print('Sexo escolhido: {}'.format(masc))
+else:
+    fem = 'feminino'
+    print('Sexo escolhido: {}'.format(fem))
 
