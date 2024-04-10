@@ -1,10 +1,11 @@
-# Progressão aritmética
-t = int(input('Digite o primeiro termo: '))
-r = int(input('Digite a razão: '))
-n = 1
-pa = 0
-while n < 11:
-    pa = t + r
-    print('\033[32mP{}:\033[m \033[43m {} \033[m'.format(n, pa), end=' | ')
-    t += r
-    n += 1
+#Seqüência de fibonacci
+n = int(input('Digite um número para a seqüência: '))
+# casos base:
+f1 = 0
+fx = 0
+i = 0
+print('{}, {}'.format(f1,fx), end= ' | ')
+while i != n:
+    fx = (f1 + 1) + (fx) # 0 + 1 + 0 = 1;
+    print('{}'.format(fx), end = ' | ')
+    i += 1 
