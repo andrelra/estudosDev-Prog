@@ -1,6 +1,5 @@
-#Seqüência de fibonacci
-n = int(input('Digite um número para n primeiras triplas de números da seqüência: '))
-# casos base:
+#Seqüência de fibonacci - os 20 primeiros números.
+n = 8
 faa = 0
 fa = 1
 fx = 0
