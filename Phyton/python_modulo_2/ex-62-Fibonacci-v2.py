@@ -1,4 +1,5 @@
 #Seqüência de fibonacci - os 20 primeiros números.
+# Nomenclatura: 'fx' = número; 'fa' = antecessor imediato; 'faa' = antecessor do antecessor imediato
 n = int(input('\033[033mQuantos primeiros núemros da seqüência de Fibonacci você quer conferir? Digite aqui: \033[m '))
 faa = 0
 fa = 1
