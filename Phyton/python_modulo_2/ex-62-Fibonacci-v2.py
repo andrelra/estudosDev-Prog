@@ -26,7 +26,7 @@ print(' \033[41m -- Fim -- \033[m')
 # 3° Passo: Determinar uma variável para cada último número (fx) no processo da seqüência;
 # 4º Passo: Determinar uma variável contator para comparar com o valor de entrada (n).
 # 5º Passo: Iniciar laço while comparando o contador com a variável de entrada de dados do 1º passo;
-# 6º Passo: Somar os dois primeiros casos bases armazenado na variável de último número (fx);
+# 6º Passo: Somar os dois primeiros casos bases armazenado o resultado na variável de último número (fx);
 # 7º Passo: Recuar o valor do antecessor de 'fx' (fa) para o antecessor deste (faa). Assim: faa <-- fa;
 # 8º Passo: Recuar o valor de fx para a posição de seu antecessor (fa). Assim: faa <-- fa <--- fx;
 # 9º Passo: Imprimir na tela o valor do último fx;
