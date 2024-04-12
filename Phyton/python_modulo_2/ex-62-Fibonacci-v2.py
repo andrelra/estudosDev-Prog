@@ -33,3 +33,7 @@ print(' \033[41m -- Fim -- \033[m')
 # 10º Psso: Fazer o próximo laço de n laços escolhidos no primeiro passo para o próximo calculo de fx;
 # 11º Passo: Incrementar o contator (Progressão aritimética de razão 1);
 # 12º Passo: Ao cabo do último laço, imprimir na tela a falavra 'Fim'.
+#
+# OBSERVAÇÃO:
+# Não se pode inverter as linhas 16 e 17, atualizando 'fa' primeiro que 'faa', pois, nesse caso, 'fa'
+# já teria outro valor que não o anterior para compor o 'faa', ou seja, não ocorreria o recuo de valor.
